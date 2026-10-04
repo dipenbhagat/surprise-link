@@ -1,0 +1,22 @@
+// EDIT HERE to change the sample wording shown when someone starts a new gift.
+export const initialGift = {
+  name:'Alex',
+  from:'Jamie',
+  message:'You make ordinary days feel like the best days. I made this little corner of the internet just for you. 💗',
+  occasion:'Just because',
+  song:'',
+  coverHint:'Tap the seal to open ♥',
+  diaryPassword:'',
+  letterHeading:'A letter for you...',
+  memoryHeading:'Our memories',
+  caption1:'Our first adventure ✨',
+  caption2:'A day I will always remember',
+  caption3:'My favorite smile ♡',
+  videoHeading:'A little video for you',
+  videoCaption:'I wanted to save this moment with you.',
+  videoUrl:'',
+  finalHeading:'One last little thing...',
+  finalText:'No matter what today brings, I hope you always remember how loved you are.',
+  background:'gingham',
+  photos:[],
+};

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" fill="none">
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#ffd9e1" stop-opacity=".7"/><stop offset="1" stop-color="#fff5ef" stop-opacity="0"/></radialGradient>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb8ca"/><stop offset="1" stop-color="#e56d91"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="15"/></filter>
+  </defs>
+  <ellipse cx="405" cy="360" rx="300" ry="280" fill="url(#glow)" filter="url(#soft)"/>
+  <g stroke="#9eb08a" stroke-width="5" stroke-linecap="round" opacity=".8">
+    <path d="M402 510C390 410 428 300 408 190"/><path d="M397 470c-64-76-118-90-170-88"/><path d="M410 420c68-83 119-108 175-106"/><path d="M405 376c-45-55-78-69-114-68"/>
+  </g>
+  <g fill="#9eb08a" opacity=".85"><ellipse cx="314" cy="420" rx="38" ry="13" transform="rotate(30 314 420)"/><ellipse cx="505" cy="369" rx="39" ry="13" transform="rotate(-32 505 369)"/><ellipse cx="352" cy="343" rx="31" ry="11" transform="rotate(24 352 343)"/></g>
+  <g class="bloom" transform="translate(408 177)">
+    <g fill="url(#petal)"><ellipse cy="-31" rx="25" ry="39"/><ellipse cy="-31" rx="25" ry="39" transform="rotate(60)"/><ellipse cy="-31" rx="25" ry="39" transform="rotate(120)"/><ellipse cy="-31" rx="25" ry="39" transform="rotate(180)"/><ellipse cy="-31" rx="25" ry="39" transform="rotate(240)"/><ellipse cy="-31" rx="25" ry="39" transform="rotate(300)"/></g>
+    <circle r="16" fill="#ffd788"/><circle r="6" fill="#fff4d1"/>
+  </g>
+  <g fill="#ed7191" font-family="Georgia,serif" font-size="30">
+    <text x="168" y="235" class="float-one">♡</text><text x="589" y="250" class="float-two">✦</text><text x="229" y="505" class="float-two">✧</text><text x="584" y="480" class="float-one">♡</text>
+  </g>
+  <g fill="#e97592" opacity=".62">
+    <path class="float-heart heart-a" d="M254 302c-22-18-43 10 0 38 43-28 22-56 0-38Z"/>
+    <path class="float-heart heart-b" d="M566 330c-17-14-34 8 0 30 34-22 17-44 0-30Z"/>
+    <path class="float-heart heart-c" d="M300 548c-14-12-29 7 0 25 29-18 14-37 0-25Z"/>
+    <path class="float-heart heart-d" d="M626 525c-12-10-25 6 0 21 25-15 12-31 0-21Z"/>
+  </g>
+  <g transform="translate(425 535) rotate(-7)"><rect x="-87" y="-62" width="174" height="124" rx="9" fill="#fffaf6" stroke="#f1d9d8" stroke-width="4"/><path d="M-82-54 0 10l82-64" stroke="#df9eaa" stroke-width="5"/><path d="M-82 54-25 0M82 54 25 0" stroke="#e8bac1" stroke-width="4"/><path d="M0-7c-22-23-48 7 0 37 48-30 22-60 0-37Z" fill="#e76e90"/></g>
+  <style>
+    .bloom{transform-box:fill-box;transform-origin:center;animation:open 5s ease-in-out infinite alternate}
+    .float-one{animation:float 4s ease-in-out infinite}.float-two{animation:float 5s ease-in-out -2s infinite}
+    .float-heart{transform-box:fill-box;transform-origin:center;animation:heart-drift 5s ease-in-out infinite alternate}.heart-b{animation-delay:-1.3s}.heart-c{animation-delay:-2.1s}.heart-d{animation-delay:-.7s}
+    @keyframes open{from{transform:translate(408px,177px) scale(.94)}to{transform:translate(408px,177px) scale(1.06)}}
+    @keyframes float{50%{transform:translateY(-12px) rotate(8deg)}}
+    @keyframes heart-drift{from{transform:translateY(8px) rotate(-8deg) scale(.92)}to{transform:translateY(-15px) rotate(8deg) scale(1.08)}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+  </style>
+</svg>
